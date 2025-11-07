@@ -1,1 +1,0 @@
-# ics-cybersecurity-essentials
