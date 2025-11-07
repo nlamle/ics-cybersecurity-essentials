@@ -1,0 +1,39 @@
+{
+  "ecb_demo": {
+    "test_image": "analysis_outputs/tux.png",
+    "visualization": "analysis_outputs/ecb_vs_modes.png",
+    "key_hex": "00112233445566778899aabbccddeeff",
+    "iv_hex": "0f1e2d3c4b5a69788796a5b4c3d2e1f0"
+  },
+  "key_reuse": {
+    "CBC": {
+      "min_length": 96.0,
+      "identical_fraction": 0.010416666666666666,
+      "histogram_distance": 0.13486812388622063,
+      "histogram_plot": "analysis_outputs/hist_cbc_comparison.png"
+    },
+    "CTR": {
+      "min_length": 87.0,
+      "identical_fraction": 0.08045977011494253,
+      "histogram_distance": 0.1319386954423385,
+      "histogram_plot": "analysis_outputs/hist_ctr_comparison.png"
+    }
+  },
+  "structured_data": {
+    "ECB": {
+      "total_blocks": 489.0,
+      "unique_blocks": 62.0,
+      "duplicate_blocks": 61.0,
+      "most_common_frequency": 8.0,
+      "duplicate_ratio": 0.12474437627811862
+    },
+    "CBC": {
+      "total_blocks": 489.0,
+      "unique_blocks": 489.0,
+      "duplicate_blocks": 0.0,
+      "most_common_frequency": 1.0,
+      "duplicate_ratio": 0.0
+    },
+    "plaintext_preview": "StudentID,Name,Age,Program,GPA\nS001,John Doe,21,Computer Science,3.52\nS002,Jane Smith,22,Information Security,3.87\nS003,Ahmed Ali,20,Computer Engineering,3.44\nS004,Mary Mensah,23,Software Engineering,3.78\nS005,Kwame Boateng,21,Data Science,3.66"
+  }
+}
